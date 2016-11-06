@@ -1,0 +1,78 @@
+/************** Main Layout *************/
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+	width: 100%;
+	overflow: auto;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	float: left;
+	width: 100%;
+}
+
+.leftPanel {
+	float: left;
+	width: 33%;
+}
+
+.mainPanel {
+	float: left;
+	width: 67%;
+}
+/*****************************************/
+
+
+
+
+/**************** Header *****************/
+.mainHeader {
+	background-color: #ab0012;
+	height: 56px;
+	line-height: 56px;
+}
+.mainHeader img {
+	vertical-align: middle;
+}
+.mainHeader span {
+	vertical-align: middle;
+	margin-left: 30px;
+	font-size: 18px;
+	color: #fff;
+}
+.restauranInfo {
+
+}
+/*****************************************/
+
+
+
+
+/************* Shopping Cart *************/
+
+/*****************************************/
+
+
+
+
+/************** Search Bar **************/
+
+/*****************************************/
+
+
+
+
+/***************** Menu *****************/
+
+/*****************************************/
+
