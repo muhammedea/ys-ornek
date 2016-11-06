@@ -29,11 +29,11 @@ define(['restaurant-data', 'menu-data'], function (restaurantData, menuData) {
 	 * @return     {Array}   The filtered products.
 	 */
 	function getFilteredProducts(searchText) {
-		var result = JSON.parse( JSON.stringfy(menuData.d.ResultSet) ); //copy menu data
+		var result = JSON.parse( JSON.stringify(menuData.d.ResultSet) ); //copy menu data
 		for (var i = result.length - 1; i >= 0; i--) {
 			for (var j = result[i].Products.length - 1; j >= 0; j--) {
 				var current_name = result[i].Products[j].DisplayName;
-				if (current_name.toLoweCase().indexOf( searchText.toLoweCase() ) === -1) {
+				if (current_name.toLowerCase().indexOf( searchText.toLowerCase() ) === -1) {
 					result[i].Products.splice(j, 1);
 				}
 			}
@@ -69,5 +69,5 @@ define(['restaurant-data', 'menu-data'], function (restaurantData, menuData) {
 		getMenuData: getMenuData,
 		getFilteredProducts: getFilteredProducts
 	};
-	
+
 });

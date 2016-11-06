@@ -73,11 +73,22 @@ define(['data'], function (data) {
 	}
 
 
+	/**
+	 * Gets the selected products in the shopping cart.
+	 *
+	 * @return     {Array}  The selected products.
+	 */
+	function getSelectedProducts() {
+		return _selected_products;
+	}
+
+
 
 	return {
 		addProduct: addProduct,
 		removeProduct: removeProduct,
-		updateProductCount: updateProductCount
+		updateProductCount: updateProductCount,
+		getSelectedProducts: getSelectedProducts
 	};
 	
 });

@@ -135,6 +135,7 @@ body {
 }
 .category {
 	border: 1px solid #ddd;
+	margin-bottom: 10px;
 }
 .category-header {
 	padding: 12px;
