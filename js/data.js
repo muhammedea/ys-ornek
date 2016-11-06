@@ -67,7 +67,8 @@ define(['restaurant-data', 'menu-data'], function (restaurantData, menuData) {
 	return {
 		getRestaurantData: getRestaurantData,
 		getMenuData: getMenuData,
-		getFilteredProducts: getFilteredProducts
+		getFilteredProducts: getFilteredProducts,
+		getProductById: getProductById
 	};
 
 });

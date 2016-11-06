@@ -31,6 +31,7 @@ define(['data'], function (data) {
 	 * @param      {number}  count      The count
 	 */
 	function addProduct(productId, count) {
+		count = +count;
 		var selected_product = _get_selected_product_by_id(productId);
 		if (selected_product) {
 			selected_product.Count += count;
@@ -51,7 +52,7 @@ define(['data'], function (data) {
 	 */
 	function removeProduct(productId) {
 		for (var i = _selected_products.length - 1; i >= 0; i--) {
-			if (_selected_products[i].Product.ProductId === id) {
+			if (_selected_products[i].Product.ProductId === productId) {
 				_selected_products.splice(i, 1);
 				return;
 			}
@@ -68,7 +69,7 @@ define(['data'], function (data) {
 	function updateProductCount(productId, count) {
 		var selected_product = _get_selected_product_by_id(productId);
 		if (selected_product) {
-			selected_product.Count = count;
+			selected_product.Count = +count;
 		}
 	}
 
@@ -83,12 +84,28 @@ define(['data'], function (data) {
 	}
 
 
+	/**
+	 * Gets the total price.
+	 *
+	 * @return     {(number)}  The total price.
+	 */
+	function getTotalPrice() {
+		var total = 0;
+		for (var i = 0; i < _selected_products.length; i++) {
+			var price = parseFloat(_selected_products[i].Product.ExtendedPrice.replace(',', '.'));
+			total += price * _selected_products[i].Count;
+		}
+		return total;
+	}
+
+
 
 	return {
 		addProduct: addProduct,
 		removeProduct: removeProduct,
 		updateProductCount: updateProductCount,
-		getSelectedProducts: getSelectedProducts
+		getSelectedProducts: getSelectedProducts,
+		getTotalPrice: getTotalPrice
 	};
 	
 });

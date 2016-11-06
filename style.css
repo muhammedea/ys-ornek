@@ -53,7 +53,7 @@ body {
 #restaurantInfo {
 	text-align: center;
 	font-size: 20px;
-	padding: 10px;
+	padding: 20px;
 }
 /*****************************************/
 
@@ -84,10 +84,10 @@ body {
 .sc-product-name {
 }
 .sc-produc-count {
-	width: 32px;
+	width: 42px;
 }
 .sc-produc-count input {
-	width: 30px;
+	width: 40px;
 }
 .sc-produc-price {
 	width: 80px;
@@ -205,6 +205,10 @@ body {
 /**************** Helpers ***************/
 .hidden {
 	display: none;
+}
+
+.text-center {
+	text-align: center;
 }
 
 * {
