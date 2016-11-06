@@ -51,7 +51,9 @@ body {
 	color: #fff;
 }
 #restaurantInfo {
-
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
 }
 /*****************************************/
 
@@ -59,21 +61,140 @@ body {
 
 
 /************* Shopping Cart *************/
+.shoppingCart {
+	margin: 0 10px;
+	border: 1px solid #ddd;
+}
+.shoppingCart-header {
+	padding: 10px 12px;
+	background-color: #ac000b;
+	font-weight: bold;
+	color: #fff;
+}
+.shoppingCart-products {
+	font-size: 12px;
+}
+.shoppingCart-products table {
+	width: 100%;
+}
+.shoppingCart-products td {
+	border-bottom: 1px solid #ddd;
+	padding: 8px 5px;
+}
+.sc-product-name {
+}
+.sc-produc-count {
+	width: 32px;
+}
+.sc-produc-count input {
+	width: 30px;
+}
+.sc-produc-price {
+	width: 80px;
+	text-align: right;
+}
+.sc-produc-remove {
+	width: 21px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ac000b;
+	font-weight: bold;
+	cursor: pointer;
+}
 
+.sc-total {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 8px;
+}
+.sc-totalPrice {
+	float: right;
+}
 /*****************************************/
 
 
 
 
 /************** Search Bar **************/
-
+.searchBar {
+	padding: 10px 30px;
+}
+.searchBar input {
+	width: 100%;
+	height: 32px;
+	padding-left: 10px;
+}
 /*****************************************/
 
 
 
 
 /***************** Menu *****************/
-
+.menu {
+	padding: 10px;
+}
+.category {
+	border: 1px solid #ddd;
+}
+.category-header {
+	padding: 12px;
+	font-weight: bold;
+	font-size: 15px;
+	border-bottom: 1px solid #ddd;
+}
+.category-body {
+	padding: 15px 10px;
+}
+.product {
+	overflow: auto;
+	zoom: 1;
+	margin-bottom: 10px;
+}
+.product-add {
+	float: left;
+	height: 46px;
+	line-height: 46px;
+	width: 72px;
+}
+.product-add input {
+	width: 35px;
+	height: 27px;
+	vertical-align: middle;
+}
+.product-add button {
+	background-color: #48912a;
+	padding: 2px 9px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	vertical-align: middle;
+}
+.product-info {
+	float: left;
+	height: 46px;
+	width: calc(100% - 158px);
+	padding: 0 10px 0 20px;
+}
+.product-name {
+	color: #ff6508;
+	height: 23px;
+	line-height: 23px;
+}
+.product-desc {
+	color: #555;
+	height: 23px;
+	line-height: 23px;
+}
+.product-price {
+	float: left;
+	height: 46px;
+	line-height: 23px;
+	color: #ff6508;
+	font-weight: bold;
+	width: 86px;
+	padding: 0 10px;
+}
 /*****************************************/
 
 
@@ -84,4 +205,18 @@ body {
 .hidden {
 	display: none;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /*****************************************
